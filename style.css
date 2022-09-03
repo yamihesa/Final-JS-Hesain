@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+body{
+    font-family: merienda;
+}
+
+/*--Header--*/
+.navbar{
+    background-color: gainsboro;
+}
+.navbar-nav{
+    display: flex;
+    justify-content:space-evenly; 
+}
+.navbar-light .navbar-nav .nav-link{
+    color: purple;
+    font-size: 1.2rem;
+    font-family: merienda;
+    margin: .5rem;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	transform: scale(1.1);
+	transition: transform 1s;
+	color: #0c0e0f;
+	box-shadow: .1rem .1rem .1rem .1rem rgba(0, 0, 0, 0.3);;
+}
+
+/*--Tienda Productos--*/
+
+.main__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.main__box .card {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    width: 12rem; 
+    height: 24rem;    
+    margin: 1rem; 
+    text-align: center;
+    background-color: rgba(210, 113, 207, 0.594);
+    box-shadow: .1rem .3rem .2rem .2rem rgba(0, 0, 0, 0.3);
+}
+.main__box .card img {
+    height: 10rem;
+    width: 10rem;
+    align-self: center; 
+    border: solid purple;
+}
+.main__box .card .card-nombre {
+    font-family: merienda;
+}
+.main__box .card .card-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: .2rem;
+    font-family: merienda; 
+}
+.main__box .card .card-content p {
+    font-size: 1.2rem;
+    line-height: normal;
+    font-weight: 600;
+    color: rgb(93, 12, 85);
+}
+.btn-buy{
+    color:purple;
+    padding-top: .5rem;
+}
+/*--Carrito--*/
+    
+.finalizarCompra {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    align-items: center;
+    background-color: rgba(119, 54, 107, 0.575);
+    color: white;
+    padding: 1rem;
+    margin-left:5rem;
+    margin-bottom: 2rem;
+    max-width: 100%; 
+    border-radius: .8rem;
+}
+@media screen and (max-width: 768px) {
+    .finalizarCompra{
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: auto;
+    }
+    .productoEnCarrito{
+        text-align: center;
+        flex-direction: column;
+    }
+}
+.tituloCarrito{
+    font-size: 1.5rem;
+    max-width: 10rem;
+    text-align: center;
+    font-weight: 600;
+}
+.precioTotal{
+    padding-right: 2.5rem;
+    background-color: white;
+    color: black;
+    border-radius: .5rem;
+}
+.botonComprar{
+    background-color: purple;
+    color: white;
+}
+.botonVaciar{
+    background-color: gray;
+    color: white;
+}
+
+/*Formulario Compras*/
+
+.mainCompras {
+    width: 60%;
+    max-width: 40rem;
+    margin: auto; 
+    padding-top: 5rem;
+}
+.mainCompras form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 100%; 
+}
+.mainCompras form p {
+    text-align: center;
+    font-family: merienda;
+    font-weight: bold;
+    color: purple;
+    margin-top: 3rem;
+}
+.mainCompras form input {
+    border: solid rgba(98, 14, 84, 0.521);
+    padding: .6rem; 
+    border-radius: .5rem;
+    margin: .5rem;
+    color:purple;
+    font-weight: 600;
+}
+.mainCompras form #submit {
+    background-color: rgba(114, 35, 97, 0.842);
+    color: white;
+    font-weight: bolder;
+    max-width: 50%;
+    align-self: center; 
+    }
+
+@media screen and (min-width: 768px) {
+   .mainCompras form {
+        height: 80vh;
+        gap: .5rem; 
+    }
+    .mainCompras form p {
+        font-size: 1.6rem; 
+    }
+}        
+
+/*Footer*/
+
+.footer{
+    background-color: gainsboro;
+    
+}
+.row .footer{
+    min-width: auto; 
+}
+.textoRedes{
+    font-family: merienda;
+    font-size:1.5rem;
+    color: darkmagenta;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 1rem;
+    
+}
+.icono{
+    width: 3rem;
+    height: 3rem;
+    margin: .8rem;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin: -1rem 2rem 1rem;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: darkmagenta;
+    padding-top: 1rem;
+    
+}
+.menu a:hover{
+    
+    color: rgb(77, 22, 76);
+    transform:scale(1.2);
+	transition: transform 1s;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: block;
+        flex-direction: column;
+        
+
+    }
+}
+
+/*Inicio*/
+
+.containerInicio{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(.//IMAGENES/v1014-pattern-001b.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+h1, h2 {
+    max-width: 100%;
+    text-align: center;
+    color: purple;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 2rem;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+@keyframes aparecer {
+    from {
+     opacity: 0;
+    }
+  
+    to {
+     opacity: 1;
+   }
+}
+@media screen and (max-width: 768px){
+    h2, h1{
+        margin: auto;    
+        font-size: 1.8rem;
+        max-width: 10rem;  
+    }
+}
+.carrusel{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    
+} 
+.carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 1.9rem 0rem;
+}
+.carrusel-item{
+    min-width: 31.25rem;
+    max-width: 12.5rem;
+    height: 12.5rem;
+    outline: .13rem solid purple;
+}
+.carrusel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carrusel-item:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 768px){
+    .carrusel-item{
+        min-width: 12.5rem;
+        max-width: 6.25rem;
+    }
+}
+/*Nosotros*/
+
+.fondoImagen{
+    background-image: url(./IMAGENES/v1014-pattern-001b.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.containerNosotros{
+    flex-wrap: wrap;
+    display: block;
+    height: auto;
+    padding-top: 6rem;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+.parrafo{
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.textoNosotros{
+    color: rgb(16, 15, 18);
+    font-size: 1.5rem;
+    line-height: 2;
+    font-weight: 600;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem .5rem grey;
+}
+@media screen and (max-width: 768px){
+    .textoNosotros{
+        font-size: 1rem;
+    }
+}
+/*Formulario*/
+
+.containerForm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 80rem;
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.tituloContacto{
+    color: aliceblue;
+    background-color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.form{
+    background-color: rgb(14, 13, 13);
+    padding: .5rem;
+}
+.form-group input{
+    background-color:whitesmoke ;
+    height: 2rem;
+}
+.form-control{
+    background-color: whitesmoke;
+}
+label{
+    font-weight: 500;
+    font-size: 1rem;
+    color: aliceblue;
+}
+.enviar{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 800;
+    border: solid grey;
+    width: 10rem;
+}
+
+.form-boton {
+    text-align: center;
+    margin-top: .5rem;
+}
+.video{
+    display: flex;
+    width: 20rem;
+    height: 25rem;
+    margin-top: 1rem; 
+}
+@media screen and (max-width: 768px){
+    .video{
+        width: 12rem;
+    }
+}
+
+
+
+
+
+
+ 

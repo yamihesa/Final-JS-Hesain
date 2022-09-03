@@ -1,0 +1,72 @@
+
+[{
+    "id": 1,
+    "nombre": "Vela de Adorno Grande",
+    "precio": 900,
+    "cantidad": 1,
+    "img": "../IMAGENES/Velas/adornos-para-velas.jpg"
+},
+{
+    "id": 2,
+    "nombre": "Vela de Adorno Mediana",
+    "precio": 500,
+    "cantidad": 1,
+    "img": "../IMAGENES/Velas/OIP.jpg"
+},
+{
+    "id": 3,
+    "nombre": "Sahumerio de Incienso chicos",
+    "precio": 490,
+    "cantidad": 1,
+    "img": "../IMAGENES/Sahumerios/Sahumerio1.jpeg"
+},
+{
+    "id": 4,
+    "nombre": "Sahumerio de Sándalo grandes",
+    "precio": 490,
+    "cantidad": 1,
+    "img": "../IMAGENES/Sahumerios/Sahumerio2.jpg"
+},
+{
+    "id": 5,
+    "nombre": "Hornito de Cerámica Mediano",
+    "precio": 2900,
+    "cantidad": 1,
+    "img": "../IMAGENES/Hornitos/Hornito.jpeg"
+},
+{
+    "id": 6,
+    "nombre": "Hornito de Cerámica Chico ",
+    "precio": 2000,
+    "cantidad": 1,
+    "img": "../IMAGENES/Hornitos/hornito2.jpg"
+},
+{
+    "id": 7,
+    "nombre": "Fuente de Agua Mediana",
+    "precio": 8500,
+    "cantidad": 1,
+    "img":"../IMAGENES/Fuentes/fuente1.png"
+},
+{
+    "id": 8,
+    "nombre": "Fuente de Agua Grande",
+    "precio": 10800,
+    "cantidad": 1,
+    "img":"../IMAGENES/Fuentes/fuente2.jpg"
+},
+{
+    "id": 9,
+    "nombre": "Atrapasueños Mediano",
+    "precio": 1800,
+    "cantidad": 1,
+    "img":"../IMAGENES/Atrapasueños/Atrapasueños.jpg"
+},
+{
+    "id": 10,
+    "nombre": "Atrapasueños Grande azul",
+    "precio": 2500,
+    "cantidad": 1,
+    "img":"../IMAGENES/Atrapasueños/atrapasueños2.jpg"
+}
+]
