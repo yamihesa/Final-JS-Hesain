@@ -134,21 +134,22 @@ body{
     margin: auto; 
     padding-top: 5rem;
 }
-.mainCompras form {
+.mainCompras .formCompra {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 60vh;
+    height: 70vh;
     width: 100%; 
 }
-.mainCompras form p {
+.mainCompras .formCompra p {
     text-align: center;
     font-family: merienda;
     font-weight: bold;
     color: purple;
     margin-top: 3rem;
+    font-size: 1.4rem;
 }
-.mainCompras form input {
+.formCompra input {
     border: solid rgba(98, 14, 84, 0.521);
     padding: .6rem; 
     border-radius: .5rem;
@@ -156,23 +157,31 @@ body{
     color:purple;
     font-weight: 600;
 }
-.mainCompras form #submit {
+
+.mainCompras .formCompra .btnCompra {
     background-color: rgba(114, 35, 97, 0.842);
     color: white;
     font-weight: bolder;
     max-width: 50%;
     align-self: center; 
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: .3rem;
+    padding: .3rem;
+    width: 8rem;
     }
 
-@media screen and (min-width: 768px) {
-   .mainCompras form {
+@media screen and (max-width: 768px) {
+   .mainCompras .formCompra {
         height: 80vh;
-        gap: .5rem; 
+        padding-bottom: .5rem;
+        margin-top: -2rem;
+
     }
-    .mainCompras form p {
-        font-size: 1.6rem; 
+    .mainCompras .formCompra p {
+        font-size: 1.2rem; 
     }
-}        
+}       
 
 /*Footer*/
 
@@ -389,8 +398,6 @@ label{
         width: 12rem;
     }
 }
-
-
 
 
 
