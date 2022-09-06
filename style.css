@@ -247,8 +247,8 @@ body{
 h1, h2 {
     max-width: 100%;
     text-align: center;
-    color: purple;
-    text-transform: uppercase;
+    color: palevioletred;
+    font-style: italic;
     font-weight: 700;
     font-size: 3rem;
     padding-top: 2rem;
@@ -400,6 +400,62 @@ label{
 }
 
 
+ body {
 
+  background:#cdb4da;
 
- 
+} 
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    
+}
+
+.error .error404{
+    font-size: 5rem;
+    color: rgba(167, 73, 162, 0.315);
+    text-align: center;
+    margin-top: rem;
+    
+}
+.error .errorNotFound{
+    font-size: 4rem;
+    padding-top: 1.5rem;
+    color: rgba(167, 73, 162, 0.315);
+    text-align: center;
+}
+.error .volverInicio{
+    text-decoration: none;
+    align-self: flex-start;
+    font-family: merienda;
+    color: steelblue;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: rgba(245, 245, 245, 0.952);
+    align-self: center;
+}
+.error .gatos{
+    width: 25rem;
+    opacity: 80%;
+    margin-top: 1rem;
+    border: solid steelblue;
+    border-radius: .8rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .error .gatos{
+        width: 10rem;
+    }
+    .error{
+        display: flex;
+        
+    }
+}
