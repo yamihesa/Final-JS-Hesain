@@ -399,29 +399,23 @@ label{
     }
 }
 
+/*--Pagina 404--*/
 
  body {
-
-  background:#cdb4da;
-
+  background-image: url(./IMAGENES/fondo404.jpg);
 } 
-
 .error{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-   
-    
+    flex-wrap: wrap;   
 }
-
 .error .error404{
     font-size: 5rem;
     color: rgba(167, 73, 162, 0.315);
     text-align: center;
-    margin-top: rem;
-    
+    margin-top: 1rem;    
 }
 .error .errorNotFound{
     font-size: 4rem;
@@ -438,11 +432,10 @@ label{
     margin-top: 2rem;
     padding: .5rem;
     border-radius: 1rem;
-    background-color: rgba(245, 245, 245, 0.952);
     align-self: center;
 }
 .error .gatos{
-    width: 25rem;
+    width: 24rem;
     opacity: 80%;
     margin-top: 1rem;
     border: solid steelblue;
