@@ -401,15 +401,17 @@ label{
 
 /*--Pagina 404--*/
 
- body {
-  background-image: url(./IMAGENES/fondo404.jpg);
-} 
+  #fondoError {
+    background-image: url(./IMAGENES/Fondo404.jpg);
+    background-size: cover;
+}  
 .error{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-wrap: wrap;   
+    
 }
 .error .error404{
     font-size: 5rem;
@@ -419,36 +421,28 @@ label{
 }
 .error .errorNotFound{
     font-size: 4rem;
-    padding-top: 1.5rem;
     color: rgba(167, 73, 162, 0.315);
     text-align: center;
 }
-.error .volverInicio{
+.volverInicio{
     text-decoration: none;
-    align-self: flex-start;
     font-family: merienda;
     color: steelblue;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    padding: .5rem;
-    border-radius: 1rem;
-    align-self: center;
+    font-size: 1.5rem;    
+    border-radius: 1rem;    
 }
-.error .gatos{
+.gatos{
     width: 24rem;
     opacity: 80%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border: solid steelblue;
     border-radius: .8rem;
     margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px){
-    .error .gatos{
-        width: 10rem;
+     .gatos{
+        width: 15rem;
     }
-    .error{
-        display: flex;
-        
-    }
+    
 }

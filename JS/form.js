@@ -69,8 +69,8 @@ const alertForm = (mensaje) => {
             localStorage.removeItem('carrito')
             Swal.fire({
                 title: '¡Gracias por tu compra!',
-                text: '',
-                confirmButtonText: 'OK',
+               /*  text: '',
+                confirmButtonText: 'OK', */
             })
             .then((result) => result ? window.location.href = "./productos.html" : null)
     }
